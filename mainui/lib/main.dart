@@ -30,11 +30,15 @@ class _loginState extends State<login> {
           children: [
             Column(
               children: [
-                Text('Hai')
+                Image.asset(
+                  'assets/logo.png',
+                  height: 250,
+                  //width: 50,
+                )
               ],
             )
           ],
-        ),
+        )
       ),
     );
   }
