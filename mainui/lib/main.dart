@@ -9,7 +9,7 @@ class MainUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      //debugShowCheckedModeBanner: false,
       home: login(),
     );
   }
@@ -26,6 +26,7 @@ class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 253, 221, 221),
       body: SafeArea(
         child: ListView(
           children: [
@@ -95,6 +96,104 @@ class _loginState extends State<login> {
                 )
               ],
             ),
+            SizedBox(height: 20,),
+            Column(
+              children: [
+                FloatingActionButton.extended(
+                  backgroundColor: oren,
+                  foregroundColor: putih,
+                  onPressed: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(
+                        builder: (context){
+                          return homePage();
+                        }
+                      )
+                    );
+                  },
+                  label: Text(
+                    '                           Login                           ',
+                  ),
+                ),
+                SizedBox(height: 10,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Don’t Have an Account? ',
+                      style: TextStyle(
+                        fontSize: 13
+                      ),
+                    ),
+                    // SizedBox(width: -2,),
+                    TextButton(
+                      onPressed: (){},
+                      child: Text(
+                        'Sign Up',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: oren,
+                          fontWeight: FontWeight.w700,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ],
+            ),
+          ],
+        )
+      ),
+    );
+  }
+}
+
+class homePage extends StatefulWidget {
+  const homePage({ Key? key }) : super(key: key);
+
+  @override
+  State<homePage> createState() => _homePageState();
+}
+
+class _homePageState extends State<homePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: ListView(
+          children: [
+            Container(
+              width: double.infinity,
+              padding: EdgeInsets.only(
+                top: 10,
+                left: 15,
+                right: 15,
+                bottom: 20
+              ),
+              decoration: BoxDecoration(
+                color: oren,
+                borderRadius: BorderRadius.vertical(
+                  bottom: Radius.circular(30),
+                ),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                        onPressed: () {} , 
+                        icon: Icon(Icons.search, color: putih,)
+                      ),
+                      IconButton(
+                        onPressed: (){}, 
+                        icon: Icon(Icons.account_circle, color: putih,)
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )
           ],
         )
       ),
