@@ -312,6 +312,7 @@ class _homePageState extends State<homePage> {
                   Image.asset('assets/fig4.png', height: 330,),
                   SizedBox(width: 10,),
                   Image.asset('assets/fig5.png', height: 330,),
+                  //SizedBox(width: 10,),
                 ],
               ),
             ),
