@@ -26,7 +26,7 @@ class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 253, 221, 221),
+      backgroundColor: oren1,
       body: SafeArea(
         child: ListView(
           children: [
@@ -159,7 +159,7 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 253, 221, 221),
+      backgroundColor: oren1,
       body: SafeArea(
         child: ListView(
           children: [
@@ -183,11 +183,21 @@ class _homePageState extends State<homePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                        onPressed: () {} , 
+                        onPressed: () {
+                          Navigator.pop(context);
+                        } , 
                         icon: Icon(Icons.search, color: putih,)
                       ),
                       IconButton(
-                        onPressed: (){}, 
+                        onPressed: () {
+                          Navigator.push(
+                            context, MaterialPageRoute(
+                              builder: (context){
+                                return profile();
+                              }
+                            )
+                          );
+                        }, 
                         icon: Icon(Icons.account_circle, color: putih,)
                       )
                     ],
@@ -231,6 +241,38 @@ class _homePageState extends State<homePage> {
             )
           ],
         )
+      ),
+    );
+  }
+}
+
+class profile extends StatefulWidget {
+  const profile({ Key? key }) : super(key: key);
+
+  @override
+  State<profile> createState() => _profileState();
+}
+
+class _profileState extends State<profile> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: oren1,
+      appBar: AppBar(
+        backgroundColor: oren,
+        title: Text('My Profile'),
+        actions: [
+          IconButton(
+            onPressed: (){}, 
+            icon: Icon(Icons.settings)
+          )
+        ],
+      ),
+
+      body: SafeArea(
+        child: ListView(
+          children: [],
+        ),
       ),
     );
   }
