@@ -262,10 +262,10 @@ class _profileState extends State<profile> {
         backgroundColor: oren,
         title: Text('My Profile'),
         actions: [
-          IconButton(
-            onPressed: (){}, 
-            icon: Icon(Icons.settings)
-          )
+          // IconButton(
+          //   onPressed: (){}, 
+          //   icon: Icon(Icons.settings)
+          // )
         ],
       ),
 
