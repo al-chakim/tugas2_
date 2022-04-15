@@ -34,3 +34,9 @@ TextStyle lima = TextStyle(
   fontSize: 14,
   fontWeight: FontWeight.w500
 );
+
+TextStyle enam = TextStyle(
+  color: hitam,
+  fontSize: 18,
+  fontWeight: FontWeight.w500
+);

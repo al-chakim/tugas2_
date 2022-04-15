@@ -232,10 +232,116 @@ class _homePageState extends State<homePage> {
                               width: 280,
                             ),
                           ],
-                        )
+                        ),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(height: 10,),
+                  Row(
+                    children: [
+                      Container(
+                        height: 40,
+                        width: 150,
+                        //padding: EdgeInsets.only(left: 20, top: 6),
+                        margin: EdgeInsets.only(right: 20, left: 20, top: 10, bottom: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: oren1
+                        ),
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: () {},
+                            child: Center(
+                              child: Text(
+                                'Booking',
+                                style: empat,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        height: 40,
+                        width: 150,
+                        //padding: EdgeInsets.only(left: 20, top: 6),
+                        margin: EdgeInsets.only(right: 20, top: 10, bottom: 10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: oren1
+                        ),
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: () {},
+                            child: Center(
+                              child: Text(
+                                'PreOrder',
+                                style: empat,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20,),
+            Padding(
+              padding: EdgeInsets.only(left: 15),
+              child: Row(
+                children: [
+                  Text('List Movie', style: enam,)
+                ],
+              ),
+            ),
+            SizedBox(height: 10,),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(12),
+              child: Row(
+                children: [
+                  Card(
+        child: InkWell(
+          splashColor: Colors.blue.withAlpha(30),
+          onTap: () {
+            debugPrint('Card tapped.');
+          },
+          child: const SizedBox(
+            width: 300,
+            height: 100,
+            child: Text('A card that can be tapped'),
+          ),
+        ),
+      ),
+      Card(
+        child: InkWell(
+          splashColor: Colors.blue.withAlpha(30),
+          onTap: () {
+            debugPrint('Card tapped.');
+          },
+          child: const SizedBox(
+            width: 300,
+            height: 100,
+            child: Text('A card that can be tapped'),
+          ),
+        ),
+      ),
+      Card(
+        child: InkWell(
+          splashColor: Colors.blue.withAlpha(30),
+          onTap: () {
+            debugPrint('Card tapped.');
+          },
+          child: const SizedBox(
+            width: 300,
+            height: 100,
+            child: Text('A card that can be tapped'),
+          ),
+        ),
+      ),
                 ],
               ),
             )
