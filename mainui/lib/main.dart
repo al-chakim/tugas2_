@@ -159,6 +159,7 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 253, 221, 221),
       body: SafeArea(
         child: ListView(
           children: [
@@ -191,6 +192,14 @@ class _homePageState extends State<homePage> {
                       )
                     ],
                   ),
+                  Column(
+                    children: [
+                      Image.asset(
+                        'assets/sam1.png',
+                        width: 280,
+                      )
+                    ],
+                  )
                 ],
               ),
             )
