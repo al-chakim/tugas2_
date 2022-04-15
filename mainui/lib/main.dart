@@ -297,51 +297,51 @@ class _homePageState extends State<homePage> {
                 ],
               ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 0,),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.all(12),
               child: Row(
                 children: [
-                  Card(
-        child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
-          onTap: () {
-            debugPrint('Card tapped.');
-          },
-          child: const SizedBox(
-            width: 300,
-            height: 100,
-            child: Text('A card that can be tapped'),
-          ),
-        ),
-      ),
-      Card(
-        child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
-          onTap: () {
-            debugPrint('Card tapped.');
-          },
-          child: const SizedBox(
-            width: 300,
-            height: 100,
-            child: Text('A card that can be tapped'),
-          ),
-        ),
-      ),
-      Card(
-        child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
-          onTap: () {
-            debugPrint('Card tapped.');
-          },
-          child: const SizedBox(
-            width: 300,
-            height: 100,
-            child: Text('A card that can be tapped'),
-          ),
-        ),
-      ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 330,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: oren
+                        ),
+                      ),
+                      SizedBox(width: 10,),
+                      Container(
+                        height: 330,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: oren
+                        ),
+                      ),
+                      SizedBox(width: 10,),
+                      Container(
+                        height: 330,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: oren
+                        ),
+                      ),
+                      SizedBox(width: 10,),
+                      Container(
+                        height: 330,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: oren
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             )
