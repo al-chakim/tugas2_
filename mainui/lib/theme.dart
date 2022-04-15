@@ -15,3 +15,9 @@ TextStyle dua = TextStyle(
   fontSize: 16,
   fontWeight: FontWeight.w700
 );
+
+TextStyle tiga = TextStyle(
+  color: putih,
+  fontSize: 20,
+  fontWeight: FontWeight.w700
+);

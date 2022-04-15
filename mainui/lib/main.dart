@@ -192,13 +192,39 @@ class _homePageState extends State<homePage> {
                       )
                     ],
                   ),
-                  Column(
-                    children: [
-                      Image.asset(
-                        'assets/sam1.png',
-                        width: 280,
-                      )
-                    ],
+                  Divider(
+                    thickness: 1.5,
+                    indent: 10,
+                    endIndent: 10,
+                    height: 1,
+                    color: putih,
+                  ),
+                  SizedBox(height: 10,),
+                  Padding(
+                    padding: EdgeInsets.only(left: 10, right: 10),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text('S', style: tiga,),
+                                Text('H', style: tiga,),
+                                Text('O', style: tiga,),
+                                Text('G', style: tiga,),
+                                Text('u', style: tiga,),
+                                Text('N', style: tiga, )
+                              ],
+                            ),
+                            SizedBox(width: 40,),
+                            Image.asset(
+                              'assets/sam1.png',
+                              width: 280,
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
