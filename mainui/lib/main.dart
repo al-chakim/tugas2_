@@ -271,7 +271,69 @@ class _profileState extends State<profile> {
 
       body: SafeArea(
         child: ListView(
-          children: [],
+          children: [
+            SizedBox(height: 20,),
+            ListTile(
+              title: Text('Chakim', style: empat,),
+              subtitle: Text('Ter - Counter'),
+              leading: Image.asset(
+                'assets/sam4.png', 
+                height: 50,
+              ),
+              trailing: Icon(
+                Icons.qr_code, 
+                color: oren,
+              ),
+            ),
+            Divider(
+              color: Colors.black54,
+              thickness: 1,
+            ),
+            ListTile(
+              title: Text('Account', style: lima,),
+              subtitle: Text(
+                'Privasy and security', 
+                style: TextStyle(
+                  fontSize: 13
+                ),
+              ),
+              leading: Icon(Icons.key),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Chat', style: lima,),
+              subtitle: Text(
+                'Privasy and security', 
+                style: TextStyle(
+                  fontSize: 13
+                ),
+              ),
+              leading: Icon(Icons.chat),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Notification', style: lima,),
+              subtitle: Text(
+                'Privasy and security', 
+                style: TextStyle(
+                  fontSize: 13
+                ),
+              ),
+              leading: Icon(Icons.notifications),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Storage dan data', style: lima,),
+              subtitle: Text(
+                'Privasy and security', 
+                style: TextStyle(
+                  fontSize: 13
+                ),
+              ),
+              leading: Icon(Icons.circle_outlined),
+              onTap: (){},
+            )
+          ],
         ),
       ),
     );

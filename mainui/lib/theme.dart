@@ -22,3 +22,15 @@ TextStyle tiga = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w700
 );
+
+TextStyle empat = TextStyle(
+  color: hitam,
+  fontSize: 16,
+  fontWeight: FontWeight.w500
+);
+
+TextStyle lima = TextStyle(
+  color: hitam,
+  fontSize: 14,
+  fontWeight: FontWeight.w500
+);
