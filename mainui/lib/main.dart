@@ -280,10 +280,18 @@ class _profileState extends State<profile> {
                 'assets/sam4.png', 
                 height: 50,
               ),
-              trailing: Icon(
-                Icons.qr_code, 
-                color: oren,
-              ),
+              trailing: IconButton(
+                onPressed: () {
+                // Navigator.push(
+                //   context, MaterialPageRoute(
+                //     builder: (context){
+                //       return profile();
+                //     }
+                //   )
+                // );
+              }, 
+              icon: Icon(Icons.qr_code_rounded, color: oren,)
+              )
             ),
             Divider(
               color: Colors.black54,
