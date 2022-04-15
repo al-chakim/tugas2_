@@ -303,7 +303,7 @@ class _profileState extends State<profile> {
             ListTile(
               title: Text('Chat', style: lima,),
               subtitle: Text(
-                'Privasy and security', 
+                'Theme, wallpaper, chat history', 
                 style: TextStyle(
                   fontSize: 13
                 ),
@@ -314,7 +314,7 @@ class _profileState extends State<profile> {
             ListTile(
               title: Text('Notification', style: lima,),
               subtitle: Text(
-                'Privasy and security', 
+                'Messages, groups & call ringtones', 
                 style: TextStyle(
                   fontSize: 13
                 ),
@@ -325,14 +325,60 @@ class _profileState extends State<profile> {
             ListTile(
               title: Text('Storage dan data', style: lima,),
               subtitle: Text(
-                'Privasy and security', 
+                'network usage, auto download', 
                 style: TextStyle(
                   fontSize: 13
                 ),
               ),
               leading: Icon(Icons.circle_outlined),
               onTap: (){},
-            )
+            ),
+            ListTile(
+              title: Text('Help', style: lima,),
+              subtitle: Text(
+                'help center, contact us, privacy policy', 
+                style: TextStyle(
+                  fontSize: 13
+                ),
+              ),
+              leading: Icon(Icons.help_outline),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Add friends', style: lima,),
+              // subtitle: Text(
+              //   'help center, contact us, privacy policy', 
+              //   style: TextStyle(
+              //     fontSize: 13
+              //   ),
+              // ),
+              leading: Icon(Icons.supervisor_account),
+              onTap: (){},
+            ),
+            SizedBox(height: 50,),
+            Column(
+              children: [
+                Text(
+                  'from', 
+                  style: TextStyle(
+                    fontWeight: FontWeight.w300
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.facebook, 
+                  size: 18,
+                ),
+                Text(
+                  'Facebook',
+                  style: lima,
+                )
+              ],
+            ),
           ],
         ),
       ),
