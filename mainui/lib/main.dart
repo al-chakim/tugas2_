@@ -303,48 +303,28 @@ class _homePageState extends State<homePage> {
               padding: EdgeInsets.all(12),
               child: Row(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 330,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: oren
-                        ),
-                      ),
-                      SizedBox(width: 10,),
-                      Container(
-                        height: 330,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: oren
-                        ),
-                      ),
-                      SizedBox(width: 10,),
-                      Container(
-                        height: 330,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: oren
-                        ),
-                      ),
-                      SizedBox(width: 10,),
-                      Container(
-                        height: 330,
-                        width: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: oren
-                        ),
-                      )
-                    ],
-                  )
+                  Image.asset('assets/fig1.png', height: 330,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig2.png', height: 330,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig3.png', height: 330,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig4.png', height: 330,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig5.png', height: 330,),
                 ],
               ),
-            )
+            ),
+            // SizedBox(height: 10,),
+            // Padding(
+            //   padding: EdgeInsets.only(left: 15),
+            //   child: Row(
+            //     children: [
+            //       Text('Alhamdulillah bisa')
+            //     ],
+            //   ),
+            // ),
+            // SizedBox(height: 20,)
           ],
         )
       ),
