@@ -36,9 +36,15 @@ class _loginState extends State<login> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Watch'),
+                    Text(
+                      'Watch', 
+                      style: tujuh,
+                    ),
                     SizedBox(width: 5,),
-                    Text('Me')
+                    Text(
+                      'Me',
+                      style: lapan,
+                    )
                   ],
                 ),
                 SizedBox(height: 20,),
