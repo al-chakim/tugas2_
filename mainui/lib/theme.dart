@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 Color putih = Color(0xffFFFFFF);
 Color hitam = Color(0xff000000);
-Color oren = Color(0xffFF4D4D);
+Color oren = Color(0xffFC6E51);
 Color oren1 = Color.fromARGB(255, 253, 221, 221);
 
 TextStyle satu = TextStyle(
   color: hitam,
-  fontSize: 30,
+  fontSize: 24,
   fontWeight: FontWeight.w700
 );
 
@@ -39,4 +39,16 @@ TextStyle enam = TextStyle(
   color: hitam,
   fontSize: 18,
   fontWeight: FontWeight.w500
+);
+
+TextStyle tujuh = TextStyle(
+  color: hitam,
+  fontSize: 30,
+  fontWeight: FontWeight.w700
+);
+
+TextStyle lapan = TextStyle(
+  color: oren,
+  fontSize: 30,
+  fontWeight: FontWeight.w700
 );

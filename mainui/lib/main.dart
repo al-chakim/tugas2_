@@ -33,9 +33,18 @@ class _loginState extends State<login> {
             SizedBox(height: 40,),
             Column(
               children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Watch'),
+                    SizedBox(width: 5,),
+                    Text('Me')
+                  ],
+                ),
+                SizedBox(height: 20,),
                 Image.asset(
-                  'assets/logo.png',
-                  height: 250,
+                  'assets/logo1.png',
+                  height: 210,
                   //width: 50,
                 )
               ],
@@ -179,9 +188,14 @@ class _homePageState extends State<homePage> {
               ),
               child: Column(
                 children: [
+                  SizedBox(height: 5,),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      Padding(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Image.asset('assets/sam2.png', height: 50,),
+                      ),
                       IconButton(
                         onPressed: () {
                           Navigator.pop(context);
@@ -281,11 +295,34 @@ class _homePageState extends State<homePage> {
               padding: EdgeInsets.only(left: 15),
               child: Row(
                 children: [
-                  Text('List Movie', style: enam,)
+                  Text('New Movie', style: enam,)
                 ],
               ),
             ),
             SizedBox(height: 0,),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(12),
+              child: Row(
+                children: [
+                  Image.asset('assets/fig1.png', height: 310,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig2.png', height: 310,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig3.png', height: 310,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig4.png', height: 310,),
+                  SizedBox(width: 10,),
+                  Image.asset('assets/fig5.png', height: 310,),
+                  //SizedBox(width: 10,),
+                ],
+              ),
+            ),
+            SizedBox(height: 13,),
+            Padding(
+              padding: EdgeInsets.only(left:15),
+              child: Text('Popular Anime', style: enam,),
+            ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.all(12),
@@ -455,7 +492,7 @@ class _profileState extends State<profile> {
               onTap: (){},
             ),
             ListTile(
-              title: Text('Storage dan data', style: lima,),
+              title: Text('Storage and data', style: lima,),
               subtitle: Text(
                 'network usage, auto download', 
                 style: TextStyle(
