@@ -200,13 +200,19 @@ class _homePageState extends State<homePage> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(left: 10),
-                        child: Image.asset('assets/sam2.png', height: 50,),
+                        child: Image.asset(
+                          'assets/sam2.png', 
+                          height: 50,
+                        ),
                       ),
                       IconButton(
                         onPressed: () {
                           Navigator.pop(context);
                         } , 
-                        icon: Icon(Icons.search, color: putih,)
+                        icon: Icon(
+                          Icons.search, 
+                          color: putih,
+                        )
                       ),
                     ],
                   ),
@@ -219,7 +225,10 @@ class _homePageState extends State<homePage> {
                   ),
                   SizedBox(height: 10,),
                   Padding(
-                    padding: EdgeInsets.only(left: 10, right: 10),
+                    padding: EdgeInsets.only(
+                      left: 10,
+                      right: 10
+                    ),
                     child: Column(
                       children: [
                         Row(
@@ -251,7 +260,12 @@ class _homePageState extends State<homePage> {
                         height: 40,
                         width: 150,
                         //padding: EdgeInsets.only(left: 20, top: 6),
-                        margin: EdgeInsets.only(right: 20, left: 20, top: 10, bottom: 10),
+                        margin: EdgeInsets.only(
+                          right: 20, 
+                          left: 20, 
+                          top: 10, 
+                          bottom: 10
+                        ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: oren1
@@ -273,7 +287,11 @@ class _homePageState extends State<homePage> {
                         height: 40,
                         width: 150,
                         //padding: EdgeInsets.only(left: 20, top: 6),
-                        margin: EdgeInsets.only(right: 20, top: 10, bottom: 10),
+                        margin: EdgeInsets.only(
+                          right: 20, 
+                          top: 10, 
+                          bottom: 10
+                        ),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: oren1
@@ -311,15 +329,29 @@ class _homePageState extends State<homePage> {
               padding: EdgeInsets.all(12),
               child: Row(
                 children: [
-                  Image.asset('assets/fig1.png', height: 310,),
+                  Image.asset(
+                    'assets/fig1.png', 
+                    height: 310,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig2.png', height: 310,),
+                  Image.asset(
+                    'assets/fig2.png', 
+                    height: 310,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig3.png', height: 310,),
+                  Image.asset(
+                    'assets/fig3.png', 
+                    height: 310,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig4.png', height: 310,),
+                  Image.asset(
+                    'assets/fig4.png', 
+                    height: 310,),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig5.png', height: 310,),
+                  Image.asset(
+                    'assets/fig5.png', 
+                    height: 310,
+                  ),
                   //SizedBox(width: 10,),
                 ],
               ),
@@ -327,24 +359,45 @@ class _homePageState extends State<homePage> {
             SizedBox(height: 13,),
             Padding(
               padding: EdgeInsets.only(left:15),
-              child: Text('Popular Anime', style: enam,),
+              child: Text(
+                'Popular Anime', 
+                style: enam,
+              ),
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.all(12),
               child: Row(
                 children: [
-                  Image.asset('assets/one.png', height: 300,),
+                  Image.asset(
+                    'assets/one.png',
+                    height: 300,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/narto.png', height: 300,),
+                  Image.asset(
+                    'assets/narto.png', 
+                    height: 300,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/naruto.png', height: 300,),
+                  Image.asset(
+                    'assets/naruto.png', 
+                    height: 300,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/knys1.png', height: 300,),
+                  Image.asset(
+                    'assets/knys1.png', 
+                    height: 300,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/knym1.png', height: 300,),
+                  Image.asset(
+                    'assets/knym1.png', 
+                    height: 300,
+                  ),
                   SizedBox(width: 10,),
-                  Image.asset('assets/knys2.png', height: 300,),
+                  Image.asset(
+                    'assets/knys2.png', 
+                    height: 300,
+                  ),
                   //SizedBox(width: 10,),
                 ],
               ),
