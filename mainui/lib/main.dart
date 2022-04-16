@@ -188,18 +188,6 @@ class _homePageState extends State<homePage> {
                         } , 
                         icon: Icon(Icons.search, color: putih,)
                       ),
-                      IconButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context, MaterialPageRoute(
-                              builder: (context){
-                                return profile();
-                              }
-                            )
-                          );
-                        }, 
-                        icon: Icon(Icons.account_circle, color: putih,)
-                      )
                     ],
                   ),
                   Divider(
@@ -316,6 +304,7 @@ class _homePageState extends State<homePage> {
                 ],
               ),
             ),
+            SizedBox(height: 50,),
             // SizedBox(height: 10,),
             // Padding(
             //   padding: EdgeInsets.only(left: 15),
@@ -328,6 +317,54 @@ class _homePageState extends State<homePage> {
             // SizedBox(height: 20,)
           ],
         )
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: oren,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            IconButton(
+              onPressed: (){}, 
+              icon: Icon(
+                Icons.home, 
+                color: putih,
+                size: 30,
+              )
+            ),
+            IconButton(
+              onPressed: (){}, 
+              icon: Icon(
+                Icons.my_library_books_outlined, 
+                color: putih,
+                size: 30,
+              )
+            ),
+            IconButton(
+              onPressed: (){}, 
+              icon: Icon(
+                Icons.notifications_none_outlined, 
+                color: putih,
+                size: 30,
+              )
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context){
+                      return profile();
+                    }
+                  )
+                );
+              }, 
+              icon: Icon(
+                Icons.account_circle_outlined, 
+                color: putih,
+                size: 30,
+              )
+            )
+          ],
+        ),
       ),
     );
   }
