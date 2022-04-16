@@ -180,7 +180,7 @@ class _homePageState extends State<homePage> {
               child: Column(
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       IconButton(
                         onPressed: () {
@@ -291,20 +291,20 @@ class _homePageState extends State<homePage> {
               padding: EdgeInsets.all(12),
               child: Row(
                 children: [
-                  Image.asset('assets/fig1.png', height: 330,),
+                  Image.asset('assets/fig1.png', height: 310,),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig2.png', height: 330,),
+                  Image.asset('assets/fig2.png', height: 310,),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig3.png', height: 330,),
+                  Image.asset('assets/fig3.png', height: 310,),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig4.png', height: 330,),
+                  Image.asset('assets/fig4.png', height: 310,),
                   SizedBox(width: 10,),
-                  Image.asset('assets/fig5.png', height: 330,),
+                  Image.asset('assets/fig5.png', height: 310,),
                   //SizedBox(width: 10,),
                 ],
               ),
             ),
-            SizedBox(height: 50,),
+            SizedBox(height: 20,),
             // SizedBox(height: 10,),
             // Padding(
             //   padding: EdgeInsets.only(left: 15),
@@ -384,7 +384,7 @@ class _profileState extends State<profile> {
       backgroundColor: oren1,
       appBar: AppBar(
         backgroundColor: oren,
-        title: Text('My Profile'),
+        title: Text('Setting'),
         actions: [
           // IconButton(
           //   onPressed: (){}, 
