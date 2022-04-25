@@ -38,12 +38,12 @@ class _loginState extends State<login> {
                   children: [
                     Text(
                       'Watch', 
-                      style: tujuh,
+                      style: lapan,
                     ),
                     SizedBox(width: 5,),
                     Text(
                       'Me',
-                      style: lapan,
+                      style: tujuh,
                     )
                   ],
                 ),
@@ -94,7 +94,7 @@ class _loginState extends State<login> {
                 ],
               ),
             ),
-            SizedBox(height: 5,),
+            //SizedBox(height: 5,),
             Row(
               children: [
                 Padding(padding: EdgeInsets.only(left: 20, right: 20)),
@@ -302,7 +302,7 @@ class _homePageState extends State<homePage> {
                             onTap: () {},
                             child: Center(
                               child: Text(
-                                'PreOrder',
+                                'Pre - Order',
                                 style: empat,
                               ),
                             ),
